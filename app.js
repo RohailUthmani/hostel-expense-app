@@ -389,7 +389,7 @@ function renderSettlements() {
     const info = document.createElement("div");
     info.textContent =
       memberName(s.fromId) +
-      " paid " +
+      " → " +
       memberName(s.toId) +
       " " +
       s.amount.toFixed(2) +
