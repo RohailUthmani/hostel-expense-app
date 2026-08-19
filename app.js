@@ -342,6 +342,10 @@ settlementForm.addEventListener("submit", function (e) {
   const toId = settlementToSelect.value;
   const amount = parseFloat(settlementAmountInput.value);
 
+  if (!settlementAmountInput.value.trim() || isNaN(Number(settlementAmountInput.value))) {
+    alert("Enter a valid numeric settlement amount.");
+    return;
+  }
   if (!amount || amount <= 0) {
     alert("Enter a valid settlement amount.");
     return;
