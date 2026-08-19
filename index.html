@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hostel Expense Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Hostel Expense Tracker</h1>
+</header>
+
+<main>
+
+  <!-- MEMBERS -->
+  <section id="members-section">
+    <h2>Members</h2>
+    <form id="member-form">
+      <input type="text" id="member-name-input" placeholder="Member name" required>
+      <button type="submit">Add Member</button>
+    </form>
+    <ul id="members-list"></ul>
+  </section>
+
+  <!-- EXPENSES -->
+  <section id="expenses-section">
+    <h2>Add Expense</h2>
+    <form id="expense-form">
+      <label for="expense-amount">Amount</label>
+      <input type="number" id="expense-amount" min="0.01" step="0.01" placeholder="Amount" required>
+
+      <label for="expense-payer">Paid by</label>
+      <select id="expense-payer" required></select>
+
+      <label for="expense-date">Date</label>
+      <input type="date" id="expense-date" required>
+
+      <label>Shared by</label>
+      <div id="expense-shared-by"></div>
+
+      <button type="submit">Add Expense</button>
+    </form>
+
+    <h2>Expenses</h2>
+    <ul id="expenses-list"></ul>
+  </section>
+
+  <!-- TOTAL -->
+  <section id="total-section">
+    <h2>Current Period Total</h2>
+    <p id="total-amount">0.00</p>
+  </section>
+
+  <!-- BALANCES -->
+  <section id="balances-section">
+    <h2>Balances</h2>
+    <ul id="balances-list"></ul>
+  </section>
+
+  <!-- SETTLEMENTS -->
+  <section id="settlements-section">
+    <h2>Record Settlement</h2>
+    <form id="settlement-form">
+      <label for="settlement-from">From</label>
+      <select id="settlement-from" required></select>
+
+      <label for="settlement-to">To</label>
+      <select id="settlement-to" required></select>
+
+      <label for="settlement-amount">Amount</label>
+      <input type="number" id="settlement-amount" min="0.01" step="0.01" placeholder="Amount" required>
+
+      <button type="submit">Record Settlement</button>
+    </form>
+
+    <h3>Settlement History</h3>
+    <ul id="settlements-list"></ul>
+  </section>
+
+  <!-- RESET -->
+  <section id="reset-section">
+    <button id="clear-period-btn">Clear Current Period</button>
+  </section>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

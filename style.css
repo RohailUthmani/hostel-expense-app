@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #222;
+}
+
+header {
+  background: #2c3e50;
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 12px;
+}
+
+section {
+  background: #fff;
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: -4px;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+button {
+  background: #2c3e50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+button:hover {
+  background: #1a252f;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 8px 6px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.remove-btn {
+  background: #c0392b;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: auto;
+  font-size: 0.85rem;
+}
+
+.remove-btn:hover {
+  background: #922b21;
+}
+
+#total-amount {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.balance-positive {
+  color: #1e8449;
+  font-weight: bold;
+}
+
+.balance-negative {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+.balance-zero {
+  color: #555;
+  font-weight: bold;
+}
+
+#expense-shared-by {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+#expense-shared-by label {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 0;
+}
+
+.expense-detail {
+  font-size: 0.8rem;
+  color: #555;
+  width: 100%;
+}
+
+#clear-period-btn {
+  background: #c0392b;
+}
+
+#clear-period-btn:hover {
+  background: #922b21;
+}
+
+.empty-msg {
+  color: #888;
+  font-size: 0.9rem;
+  padding: 6px 0;
+}
